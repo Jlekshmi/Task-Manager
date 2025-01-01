@@ -1,0 +1,44 @@
+.sidebar {
+  background-color: #1B1E3E;
+}
+
+.logo-container {
+  text-align: center;
+}
+
+.logo-image {
+  width: 200px;
+  height: 200px;
+  margin-right: 10px;
+}
+
+.logo-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.menu-item a.active,.menu-item a:hover  {
+  background-color: #2e2e3c;
+  color: #FFC857;
+  font-weight: bold;
+}

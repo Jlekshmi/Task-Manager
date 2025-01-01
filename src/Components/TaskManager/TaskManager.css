@@ -1,0 +1,267 @@
+.task-manager-container h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.task-table {
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+.task-table th {
+  background: #1b1e3e;
+  color: #fff;
+}
+
+.task-table th,
+.task-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+.task-table tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.task-table tbody tr:hover {
+  background-color: #e8f5e9;
+}
+
+select {
+  padding: 6px 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  background-color: white;
+  font-size: 0.9rem;
+}
+
+.delete-btn {
+  background-color: #e53935;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c62828;
+}
+
+.task-manager-container p {
+  text-align: center;
+  color: #777;
+  font-size: 1rem;
+}
+.popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  z-index: 9999;
+  width: 300px;
+  text-align: center;
+}
+
+.popup h3 {
+  margin-bottom: 10px;
+  color: #333;
+  font-size: 1.2rem;
+}
+
+.popup p {
+  margin-bottom: 20px;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.popup-buttons {
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.popup-buttons button {
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  border: none;
+}
+
+.popup .confirm-btn {
+  background-color: #e53935;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.popup .confirm-btn:hover {
+  background-color: #c62828;
+}
+
+.popup .cancel-btn {
+  background-color: #9e9e9e;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+.popup .cancel-btn:hover {
+  background-color: #757575;
+}
+
+/* Search Container */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 50%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.search-input:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+/* Filters Container */
+.filters-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Filter Dropdowns */
+.filter-dropdown {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: white;
+  outline: none;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filter-dropdown:focus {
+  border-color: #4caf50;
+  box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Placeholder Styling */
+.filter-dropdown option {
+  color: #333;
+}
+
+.align-self-normal {
+  align-self: normal;
+}
+@media screen and (max-width: 768px) {
+  .filters-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .filter-dropdown {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .task-table th,
+  .task-table td {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .task-manager-container h2 {
+    font-size: 1.5rem;
+  }
+
+  select,
+  .delete-btn {
+    font-size: 0.8rem;
+    padding: 6px;
+  }
+  .search-input,
+  .filter-dropdown {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 0px) {
+  .task-table {
+    display: none; /* Hide the table in mobile view */
+  }
+
+  .task-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem; /* Add spacing between cards */
+  }
+
+  .task-card {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+  }
+
+  .task-card-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+
+  .task-card-details {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  .task-card-label {
+    font-weight: bold;
+  }
+
+  .task-card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+
+  .delete-btn {
+    color: white;
+    background-color: #e63946;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .task-table {
+    display: table;
+  }
+  .task-card {
+    display: none;
+  }
+}

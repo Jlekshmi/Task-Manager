@@ -1,0 +1,240 @@
+.home-container {
+  padding: 20px;
+  background-color: #F4F4F4;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.home-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.react-calendar {
+  margin: 0 auto;
+}
+
+.task-badge {
+  padding: 2px 5px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  color: #fff;
+  margin: 2px;
+}
+
+.low-priority {
+  background-color: #88D498;
+}
+
+.medium-priority {
+  background-color: #F77F00;
+}
+
+.high-priority {
+  background-color: #E63946;
+}
+
+.task-list {
+  margin-top: 20px;
+}
+
+.task-item {
+  padding: 10px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.task-item.low {
+  background-color: #4CAF50;
+}
+
+.task-item.medium {
+  background-color: #ff9800;
+}
+
+.task-item.high {
+  background-color: #f44336;
+}
+
+
+.page-title-box .page-title-right {
+  float: right;
+  margin-top: 20px;
+}
+.page-title-box .breadcrumb {
+  padding-top: 8px;
+}
+.page-title-box .page-title {
+  font-size: 18px;
+  margin: 0;
+  line-height: 75px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.task-summary {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  flex: 1;
+}
+
+.total-tasks { background-color: #007bff; color: white; }
+.pending-tasks { background-color: #ffc107; color: black; }
+.in-progress-tasks { background-color: #17a2b8; color: white; }
+.completed-tasks { background-color: #28a745; color: white; }
+.high-priority-tasks { background-color: #dc3545; color: white; }
+.medium-priority-tasks { background-color: #fd7e14; color: white; }
+.low-priority-tasks { background-color: #6c757d; color: white; }
+.task-deadlines {
+  margin-bottom: 2rem;
+}
+
+.task-deadlines ul {
+  list-style: none;
+  padding: 0;
+}
+
+.task-deadlines li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+.task-completion-graph {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.task-summary-section {
+  margin-top: 20px;
+}
+
+.summary-card {
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.summary-card .card-body {
+  padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+.summary-card h5 {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #6c757d;
+}
+
+.summary-card h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 0;
+  color: #343a40;
+}
+
+.summary-card .summary-icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto 10px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.summary-card .progress {
+  height: 8px;
+  border-radius: 20px;
+  overflow: hidden;
+  margin-top: 10px;
+  flex: auto;
+}
+
+.summary-card .progress-bar {
+  height: 8px;
+}
+.deadlines-section {
+  margin-top: 20px;
+}
+
+.deadlines-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.deadlines-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.deadlines-card .card-header {
+  padding: 10px 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1.1rem;
+}
+
+.list-group-item {
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+.badge {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 20px;
+}
+
+.badge.bg-low {
+  background-color: #88D498;
+  color: #fff;
+}
+
+.badge.bg-medium {
+  background-color: #F77F00;
+  color: #fff;
+}
+
+.badge.bg-high {
+  background-color: #E63946;
+  color: #fff;
+}
+
+.badge.bg-danger {
+  background-color: #ff4d4f;
+}
+
+.badge.bg-primary {
+  background-color: #007bff;
+}
+
+.card-body {
+  padding: 20px;
+}
